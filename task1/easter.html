@@ -22,7 +22,8 @@
         let keys = [];
         document.addEventListener('keydown', (e) => {
             keys.push(e.key);
-            if (keys.join(',').includes('ArrowUp,ArrowUp,ArrowDown,ArrowDown')) {
+            if (keys.length > 10) keys.shift();
+            if (keys.join(',').includes('l,l,r,r,ArrowLeft,ArrowRight,ArrowLeft,ArrowRight,b,a')) {
                 document.body.style.background = 'linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)';
             }
         });
