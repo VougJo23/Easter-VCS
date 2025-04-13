@@ -10,12 +10,12 @@
     <p>Find the hidden Easter eggs on this page!</p>
     
     <div class="egg" onclick="alert('You found a chocolate egg! 🍫')"></div>
-    <div class="egg" onclick="document.getElementById('secretBunny').style.display='block'"></div>
+    <div class="egg dark-green-egg" onclick="document.getElementById('secretBunny').style.display='block'"></div>
     <div class="egg" onclick="this.style.background='rainbow'"></div>
-    <div class="egg" onclick="alert('You found a chocolate egg! 🍫')"></div>
+    <div class="egg dark-green-egg" onclick="alert('You found a chocolate egg! 🍫')"></div>
     <div class="egg" onclick="alert('You found a chocolate egg! 🍫')"></div>
 
-    <p class="hidden-basket">🧺 Secret Easter Basket Found! 🧺</p>
+    <p class="hidden-basket">🕯 Secret Easter Basket Found! 🕯</p>
     
     <div id="secretBunny">🐰</div>
 
@@ -27,7 +27,7 @@
 
             if (keys.length > 10) keys.shift();
             if (keys.join(',').includes('l,l,r,r,ArrowLeft,ArrowRight,ArrowLeft,ArrowRight,b,a')) {
-                document.body.style.background = 'linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)';
+                document.body.style.background = 'linear-gradient(to right, blue,green)';
             }
         });
     </script>
